@@ -3,7 +3,7 @@ pragma solidity ^0.8.13;
 
 import "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol";
 
-contract OzDeployer {
+contract Deployer {
     event ContractCreated(address indexed contractAddress, uint salt);
 
     function getAddress(bytes memory bytecode, uint salt) public view returns (address) {
