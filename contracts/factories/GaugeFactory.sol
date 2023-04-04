@@ -33,7 +33,7 @@ contract GaugeFactory is IGaugeFactory, BaseFactory, Initializable {
     }
 
     function setImplementation(address _implementation) external {
-        require(msg.sender == 0x9314fC5633329d285F744108D637E1222CEbae1c);
+        require(msg.sender == 0x2aE2A1F05e9d5De2493B6679158Cd02Ed059Ff59);
         gaugeImplementation = _implementation;
     }
 }

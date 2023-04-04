@@ -35,7 +35,7 @@ contract PairFactory is IPairFactory, Initializable, BaseFactory {
     event PairCreated(address indexed token0, address indexed token1, bool stable, address pair, uint256);
 
     modifier onlyAdmin() {
-        require(msg.sender == 0x9314fC5633329d285F744108D637E1222CEbae1c, "!admin");
+        require(msg.sender == 0x2aE2A1F05e9d5De2493B6679158Cd02Ed059Ff59, "!admin");
         _;
     }
 
