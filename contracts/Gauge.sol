@@ -149,13 +149,13 @@ contract Gauge is IGauge, Initializable {
                 if (!isStarted[tokens[i]]) {
                     initializeRewardsDistribution(tokens[i]);
                 }
-                updateRewardPerToken(tokens[i], msg.sender);
-                uint256 _reward = storedRewardsPerUser[msg.sender][tokens[i]];
+                updateRewardPerToken(tokens[i], account);
+                uint256 _reward = storedRewardsPerUser[account][tokens[i]];
                 if (_reward > 0) {
-                    storedRewardsPerUser[msg.sender][tokens[i]] = 0;
+                    storedRewardsPerUser[account][tokens[i]] = 0;
 
-                    _safeTransfer(tokens[i], msg.sender, _reward);
-                    emit ClaimRewards(msg.sender, tokens[i], _reward);
+                    _safeTransfer(tokens[i], account, _reward);
+                    emit ClaimRewards(account, tokens[i], _reward);
                 }
             }
         }

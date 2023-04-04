@@ -32,6 +32,11 @@ contract PairFactory is IPairFactory, Initializable, BaseFactory {
 
     event PairCreated(address indexed token0, address indexed token1, bool stable, address pair, uint256);
 
+    modifier onlyAdmin() {
+        require(msg.sender == 0x9314fC5633329d285F744108D637E1222CEbae1c, "!admin");
+        _;
+    }
+
     function initialize(
         address _proxyAdmin,
         address _pairImplementation,
@@ -129,5 +134,9 @@ contract PairFactory is IPairFactory, Initializable, BaseFactory {
         isPair[pair] = true;
 
         emit PairCreated(token0, token1, stable, pair, allPairs.length);
+    }
+
+    function setImplementation(address _implementation) external onlyAdmin {
+        pairImplementation = _implementation;
     }
 }

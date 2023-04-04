@@ -17,6 +17,11 @@ contract FeeDistributorFactory is IFeeDistributorFactory, BaseFactory, Initializ
 
     address public feeDistributorImplementation;
 
+    modifier onlyAdmin() {
+        require(msg.sender == 0x9314fC5633329d285F744108D637E1222CEbae1c, "!admin");
+        _;
+    }
+
     function initialize(address _proxyAdmin) external initializer {
         proxyAdmin = _proxyAdmin;
 
@@ -34,5 +39,9 @@ contract FeeDistributorFactory is IFeeDistributorFactory, BaseFactory, Initializ
         FeeDistributor(lastFeeDistributer).initialize(msg.sender);
 
         return lastFeeDistributer;
+    }
+
+    function setImplementation(address _implementation) external onlyAdmin {
+        feeDistributorImplementation = _implementation;
     }
 }

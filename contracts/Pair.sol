@@ -135,6 +135,8 @@ contract Pair is IPair, Initializable {
         IVoter voter = IVoter(IPairFactory(factory).voter());
         address gauge = voter.gauges(address(this));
 
+        require(msg.sender == gauge, "!gauge");
+
         uint claimed0;
         uint claimed1;
 
