@@ -37,18 +37,18 @@ async function main() {
     logics.votingEscrow.address,
   ]);
 
-  log.info("FeeDistributorFactory:", logics.feeDistributorFactory.address);
-  log.info("GaugeFactory:", logics.gaugeFactory.address);
-  log.info("PairFactory:", logics.pairFactory.address);
-  log.info("Minter:", logics.minter.address);
-  log.info("Pair:", logics.pair.address);
-  log.info("RewardsDistributor:", logics.rewardsDistributor.address);
-  log.info("Router:", logics.router.address);
   log.info("Snek:", logics.snek.address);
+  log.info("PairFactory:", logics.pairFactory.address);
+  log.info("Pair:", logics.pair.address);
+  log.info("Router:", logics.router.address);
   log.info("SnekLibrary:", logics.snekLibrary.address);
   log.info("VeArtProxy:", logics.veArtProxy.address);
-  log.info("Voter:", logics.voter.address);
   log.info("VotingEscrow:", logics.votingEscrow.address);
+  log.info("FeeDistributorFactory:", logics.feeDistributorFactory.address);
+  log.info("GaugeFactory:", logics.gaugeFactory.address);
+  log.info("Voter:", logics.voter.address);
+  log.info("RewardsDistributor:", logics.rewardsDistributor.address);
+  log.info("Minter:", logics.minter.address);
 }
 
 main()

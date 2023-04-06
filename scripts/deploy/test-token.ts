@@ -6,11 +6,11 @@ import { log } from "../utils/log";
 
 async function main() {
   const signer = (await ethers.getSigners())[0];
-  const weth = await Deploy.deployContract(signer, "Token", "Wrapped Ether", "WETH", 18);
-  const usdc = await Deploy.deployContract(signer, "Token", "USD Coin", "USDC", 6);
-  const usdt = await Deploy.deployContract(signer, "Token", "Tether USD", "USDT", 6);
-  const mim = await Deploy.deployContract(signer, "Token", "Magic Internet Money", "MIM", 18);
-  const dai = await Deploy.deployContract(signer, "Token", "Dai Stablecoin", "DAI", 18);
+  const weth = await Deploy.deployContract(signer, "TestToken", "Wrapped Ether", "WETH", 18);
+  const usdc = await Deploy.deployContract(signer, "TestToken", "USD Coin", "USDC", 6);
+  const usdt = await Deploy.deployContract(signer, "TestToken", "Tether USD", "USDT", 6);
+  const mim = await Deploy.deployContract(signer, "TestToken", "Magic Internet Money", "MIM", 18);
+  const dai = await Deploy.deployContract(signer, "TestToken", "Dai Stablecoin", "DAI", 18);
 
   await Misc.runAndWait(() => weth.mint(signer.address, ethers.utils.parseUnits("1000000", 18)));
   await Misc.runAndWait(() => usdc.mint(signer.address, ethers.utils.parseUnits("1000000", 6)));

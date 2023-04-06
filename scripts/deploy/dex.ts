@@ -15,23 +15,23 @@ interface deployItem {
 const deployItems: deployItem[] = [
   {
     name: "PairFactory",
-    logic: "0x0C9fdCD8e60Ec74abFBc6Cf8B185548b36caEF08",
-    salt: 100787077, // 0xeeeee07510d6c098caeF8dA4CE73F3F66020BCFB
+    logic: "0xA15302aECD6C9646AEA06E429Af83d0DFD358501",
+    salt: 2506028809, // 0xeeee175CC85Db8D1245094B0f83e39b0128a8D6B
   },
   {
     name: "Router",
-    logic: "0x7b0dc9aD754c1B9c611B4198F8ffFB0D8264b870",
-    salt: 203732558, // 0xeeeee61833e76a9A03092a12aA5f58A5e3505FA6
+    logic: "0x62bca03dFc65FfC9c9D96bA1AB6cc2135eFF6b52",
+    salt: 2000672741, // 0xeeee1b84A9D7F1648ee1537D23E233283B042FA1
   },
   {
     name: "SnekLibrary",
-    logic: "0xF4428b3Dcd89FF24977F96a114B9EA28f8a17D92",
-    salt: 219191832, // 0xeeeee00404c4718b3f3Dbf9b3256af13573aB41F
+    logic: "0x991673ca3cD1e0960463bDa7cFC688C2867c080F",
+    salt: 2003705733, // 0xeeee107104Dc4Bd4b3339eF6e9081572ac015DF4
   },
 ];
 
-const pairLogic = "0x90236f699C38a2fAB16bD66D59910c531A4FCAa9";
-const voterAddress = "0xeeeee2BA2825991CCd9E7053712aa852498b71C3"; // salt: 709347895
+const pairLogic = "0x95171AA21A29A3cFa53BaB78345DD939fBb19802";
+const voterAddress = "0xeeee674b981F7A0266c099bdD8150B137996cC31"; // salt: 2106312492
 const msig = "0x74D638baa8c073C8528745D0F8fBCB6FCd0fC1a2";
 const deployerAddress = "0x3C252a188Aa35D5B08Ca141d79CBDC951Bc160F0";
 const proxyAdminAddress = "0xa9B41ce6BD3F781Ead19d33b142270B392e7A5e2";

@@ -12,51 +12,60 @@ deploy/token.ts
 deploy/dex.ts
 operation/add-liquidity.ts (for weth/usdc)
 operation/verify-pair.ts
+deploy/vote-system.ts
 
 ## Testnet
 
 ### Implementations
 
-15:10:41 INFO FeeDistributorFactory: 0xb51c3DD9051Aa2792575Bd4258D21523E7fea30e
-15:10:41 INFO GaugeFactory: 0xe6A99980D6f13F3C692D94a8400104D37f36Ed22
-15:10:41 INFO PairFactory: 0x0C9fdCD8e60Ec74abFBc6Cf8B185548b36caEF08
-15:10:41 INFO Minter: 0x6F26a2F335C31b7C819Fc55a686444e6b9845965
-15:10:41 INFO Pair: 0x90236f699C38a2fAB16bD66D59910c531A4FCAa9
-15:10:41 INFO RewardsDistributor: 0x2c5221a49679E5c3Eed696Ab4986E01c5E09b93b
-15:10:41 INFO Router: 0x7b0dc9aD754c1B9c611B4198F8ffFB0D8264b870
-15:10:41 INFO Snek: 0xE8b28266b49e3C775309448fd325a2210F718dF9
-15:10:41 INFO SnekLibrary: 0xF4428b3Dcd89FF24977F96a114B9EA28f8a17D92
-15:10:41 INFO VeArtProxy: 0x9Fe6341Daf8B57e22675d23d7549481a688680f2
-15:10:41 INFO Voter: 0x0Ac1F24F47Ca47525d76d11b058f5F1664FA0F7B
-15:10:41 INFO VotingEscrow: 0xB0467b567cfB12cE77648864643909d881a8eFCB
+| Contract              | Address                                    |
+| --------------------- | ------------------------------------------ |
+| Snek                  | 0xfF7Dcc26D9a5E24974f27936BEA2895532F373a5 |
+| PairFactory           | 0xA15302aECD6C9646AEA06E429Af83d0DFD358501 |
+| Pair                  | 0x95171AA21A29A3cFa53BaB78345DD939fBb19802 |
+| Router                | 0x62bca03dFc65FfC9c9D96bA1AB6cc2135eFF6b52 |
+| SnekLibrary           | 0x991673ca3cD1e0960463bDa7cFC688C2867c080F |
+| VeArtProxy            | 0xd09Cffc843710749B550b299243A7ff84b462fd1 |
+| VotingEscrow          | 0x270ef8f7364EE60CE0b486e90E5f99Bc2eb9Ea96 |
+| FeeDistributorFactory | 0x53B6c760282767dd9F8b5c518a725B91Dc906428 |
+| GaugeFactory          | 0x9Dd766Df594D787Bb3f07438d135c4C42d31E4dF |
+| Voter                 | 0x4184C04A7f7c8cB002Fe3F067ad570dBfbF64d75 |
+| RewardsDistributor    | 0x64088aA4B2876473809fC0fEe2372b554226fe09 |
+| Minter                | 0xAeD4184C0e14DD77af0c980bB8DDcA8f0715A581 |
 
 ### Deployer
 
-proxy admin: 0xa9B41ce6BD3F781Ead19d33b142270B392e7A5e2
-deployer: 0x3C252a188Aa35D5B08Ca141d79CBDC951Bc160F0
+| Contract   | Address                                    |
+| ---------- | ------------------------------------------ |
+| ProxyAdmin | 0xa9B41ce6BD3F781Ead19d33b142270B392e7A5e2 |
+| Deployer   | 0x3C252a188Aa35D5B08Ca141d79CBDC951Bc160F0 |
 
 ### Proxies
 
-Snek: 0xeeeee991183AF9bF54079B2681CF28B97F1c97e2
-PairFactory : 0xeeeee07510d6c098caeF8dA4CE73F3F66020BCFB
-Router : 0xeeeee61833e76a9A03092a12aA5f58A5e3505FA6
-SnekLibrary : 0xeeeee00404c4718b3f3Dbf9b3256af13573aB41F
-VeArtProxy: 0xeeeee9Dd5830Ea2B085e6DB83D9Eb4f12EF0Ab22
-VotingEscrow: 0xeeeee84a6d623D26FF27f83f3057B611A36EcB29
-FeeDistributorFactory: 0xeeeee3bd4f3EBD5Dc05Aa842e81A7bCa928436BB
-GaugeFactory: 0xeeeee5d9cDDa5aB12B24185078E07eff3b00f040
-Voter: 0xeeeee2BA2825991CCd9E7053712aa852498b71C3
-RewardsDistributor: 0xB030D56411D48e302bF6c634213c5C627DC24880
-Minter: 0xeeeee39137A6474F8A7a23a0866EE13Cb0DB414e
+| Contract              | Address                                    |
+| --------------------- | ------------------------------------------ |
+| Snek                  | 0xeeee97AC0f417D220dFfA3DCCbf6121C53541513 |
+| PairFactory           | 0xeeee175CC85Db8D1245094B0f83e39b0128a8D6B |
+| Router                | 0xeeee1b84A9D7F1648ee1537D23E233283B042FA1 |
+| SnekLibrary           | 0xeeee107104Dc4Bd4b3339eF6e9081572ac015DF4 |
+| VeArtProxy            | 0xeeee22cd7047966eDBE47Ff5698d34159C953cCF |
+| VotingEscrow          | 0xeeee3823509dF4819F3D7F4B93D314e9a2fc8d9f |
+| FeeDistributorFactory | 0xeeee461cFc20E385891380BC5d4DACc258ff50F5 |
+| GaugeFactory          | 0xeeee55A381ca608B45a550A0c261B9ADa9C645f5 |
+| Voter                 | 0xeeee674b981F7A0266c099bdD8150B137996cC31 |
+| RewardsDistributor    | 0xeeee794A5dd290Eb5CC92598A08EB61fE6D5f261 |
+| Minter                | 0xeeee84244DD0A1dE06493A0252dC02A238C04988 |
 
 ### Test Tokens
 
-2023-03-29 14:27:38.837 wavax: 0xd00ae08403B9bbb9124bB305C09058E32C39A48c
-2023-03-29 14:27:38.837 weth: 0xB124CD5F735810B3C672A4a0a208f0aAEF861201
-2023-03-29 14:27:38.839 usdc: 0x8530f66241E47eE93dbDd3542455889f9f12FA6E
-2023-03-29 14:27:38.841 usdt: 0x3Bb3dA843522f65b18d1E23d63124AA035f9A3D1
-2023-03-29 14:27:38.844 mim: 0x6223D4BF70e5aD440c41F39F3420178a0CF3AC70
-2023-03-29 14:27:38.847 dai: 0x3383791f2C0CCd0f6f8f39043cBBb009DD9d7E21
+| Token | Address                                    |
+| ----- | ------------------------------------------ |
+| wavax | 0xd00ae08403B9bbb9124bB305C09058E32C39A48c |
+| weth  | 0xB124CD5F735810B3C672A4a0a208f0aAEF861201 |
+| usdc  | 0x8530f66241E47eE93dbDd3542455889f9f12FA6E |
+| usdt  | 0x3Bb3dA843522f65b18d1E23d63124AA035f9A3D1 |
+| mim   | 0x6223D4BF70e5aD440c41F39F3420178a0CF3AC70 |
+| dai   | 0x3383791f2C0CCd0f6f8f39043cBBb009DD9d7E21 |
 
 ## Mainnet
 
