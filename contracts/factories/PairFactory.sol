@@ -30,6 +30,8 @@ contract PairFactory is IPairFactory, Initializable, BaseFactory {
     // pair => fee
     mapping(address => uint256) public pairFee;
 
+    bool public isPairCreationPaused;
+
     event PairCreated(address indexed token0, address indexed token1, bool stable, address pair, uint256);
 
     modifier onlyAdmin() {
@@ -51,6 +53,7 @@ contract PairFactory is IPairFactory, Initializable, BaseFactory {
         voter = _voter;
         proxyAdmin = _proxyAdmin;
         pairImplementation = _pairImplementation;
+        isPairCreationPaused = true;
     }
 
     function allPairsLength() external view returns (uint256) {
@@ -65,6 +68,11 @@ contract PairFactory is IPairFactory, Initializable, BaseFactory {
     function acceptPauser() external {
         require(msg.sender == pendingPauser);
         pauser = pendingPauser;
+    }
+
+    function setPairCreationPaused(bool _state) external {
+        require(msg.sender == pauser);
+        isPairCreationPaused = _state;
     }
 
     function setPause(bool _state) external {
@@ -118,6 +126,10 @@ contract PairFactory is IPairFactory, Initializable, BaseFactory {
     }
 
     function createPair(address tokenA, address tokenB, bool stable) external returns (address pair) {
+        if (isPairCreationPaused) {
+            require(msg.sender == pauser, "CP"); // Pair: CREATION_PAUSED
+        }
+
         require(tokenA != tokenB, "IA"); // Pair: IDENTICAL_ADDRESSES
         (address token0, address token1) = tokenA < tokenB ? (tokenA, tokenB) : (tokenB, tokenA);
         require(token0 != address(0), "ZA"); // Pair: ZERO_ADDRESS

@@ -215,6 +215,7 @@ contract Voter is IVoter, Initializable {
     }
 
     function createGauge(address _pool) external returns (address) {
+        require(msg.sender == governor);
         require(gauges[_pool] == address(0x0), "exists");
         address[] memory allowedRewards = new address[](3);
         address[] memory internalRewards = new address[](2);
