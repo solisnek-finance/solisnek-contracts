@@ -19,7 +19,7 @@ contract Minter is IMinter, Initializable {
     uint256 internal constant PRECISION = 1000;
     uint256 internal constant TERMINAL_SUPPLY = 500_000_000 * 1e18;
     uint256 internal constant TERMINAL_EMISSION = 1_000_000 * 1e18;
-    uint256 internal constant MAX_GROWTH = 250; // 25%
+    uint256 internal constant GROWTH = 200; // 20%
 
     ISnek public _snek;
     IVoter public _voter;
@@ -71,9 +71,8 @@ contract Minter is IMinter, Initializable {
     }
 
     // calculate inflation and adjust ve balances accordingly
-    function calculate_growth(uint256 _minted) public view returns (uint256) {
-        uint256 rate = (active_period / WEEK - first_period / WEEK) * 10;
-        return (Math.min(rate, MAX_GROWTH) * _minted) / PRECISION;
+    function calculate_growth(uint256 _minted) public pure returns (uint256) {
+        return (GROWTH * _minted) / PRECISION;
     }
 
     function start_periods() external {
