@@ -1,5 +1,6 @@
 import { ethers } from "hardhat";
 import { BigNumberish, Contract } from "ethers";
+import * as config from "./config";
 import { Deploy } from "../utils/deploy";
 import { Verify } from "../utils/verify";
 import { Misc } from "../utils/misc";
@@ -62,18 +63,15 @@ const initialSupply = "1000000000000000000000000000"; // 1M
 
 const snek = "0xeeee97AC0f417D220dFfA3DCCbf6121C53541513";
 const pairFactoryAddress = "0xeeee175CC85Db8D1245094B0f83e39b0128a8D6B";
-const msig = "0x74D638baa8c073C8528745D0F8fBCB6FCd0fC1a2";
-const deployerAddress = "0x3C252a188Aa35D5B08Ca141d79CBDC951Bc160F0";
-const proxyAdminAddress = "0xa9B41ce6BD3F781Ead19d33b142270B392e7A5e2";
 
 async function main() {
   const signer = (await ethers.getSigners())[0];
   const deployerContract = await ethers.getContractFactory("Deployer", signer);
-  const deployer = deployerContract.attach(deployerAddress);
+  const deployer = deployerContract.attach(config.deployerAddress);
 
   const logics = deployItems.map((item) => item.logic);
   const salts = deployItems.map((item) => item.salt);
-  const proxies = await Deploy.deployProxiesWithDeployer(deployer, logics, proxyAdminAddress, salts);
+  const proxies = await Deploy.deployProxiesWithDeployer(deployer, logics, config.proxyAdminAddress, salts);
   deployItems.map((item, idx) => log.info(`proxy ${item.name}:`, proxies[idx]));
 
   let contracts: { [key: string]: Contract } = {};
@@ -87,13 +85,13 @@ async function main() {
       snek,
       contracts["VeArtProxy"].address,
       contracts["Voter"].address,
-      msig
+      config.msig
     )
   );
   await Misc.runAndWait(() =>
-    (contracts["FeeDistributorFactory"] as FeeDistributorFactory).initialize(proxyAdminAddress)
+    (contracts["FeeDistributorFactory"] as FeeDistributorFactory).initialize(config.proxyAdminAddress)
   );
-  await Misc.runAndWait(() => (contracts["GaugeFactory"] as GaugeFactory).initialize(proxyAdminAddress));
+  await Misc.runAndWait(() => (contracts["GaugeFactory"] as GaugeFactory).initialize(config.proxyAdminAddress));
   await Misc.runAndWait(() =>
     (contracts["Voter"] as Voter).initialize(
       contracts["VotingEscrow"].address,
@@ -101,7 +99,7 @@ async function main() {
       contracts["GaugeFactory"].address,
       contracts["FeeDistributorFactory"].address,
       contracts["Minter"].address,
-      msig,
+      config.msig,
       []
     )
   );
@@ -119,7 +117,7 @@ async function main() {
       contracts["VotingEscrow"].address,
       contracts["RewardsDistributor"].address,
       initialSupply,
-      msig
+      config.msig
     )
   );
 

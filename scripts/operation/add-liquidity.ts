@@ -7,8 +7,8 @@ import { log } from "../utils/log";
 const tokenA = "0xd00ae08403B9bbb9124bB305C09058E32C39A48c";
 const tokenB = "0x8530f66241E47eE93dbDd3542455889f9f12FA6E";
 const isStable = false;
-const decimalsA = 18; // only for logging, not affect adding liquidity logic
-const decimalsB = 6; // only for logging, not affect adding liquidity logic
+const decimalsA = 18;
+const decimalsB = 6;
 const amountA = parseUnits("10", decimalsA);
 const amountB = parseUnits("179", decimalsB);
 

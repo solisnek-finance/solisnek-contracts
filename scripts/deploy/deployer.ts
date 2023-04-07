@@ -9,6 +9,7 @@ async function main() {
   const deployer = (await Deploy.deployProxy(signer, "Deployer")) as Deployer;
   const proxyAdminAddress = await upgrades.erc1967.getAdminAddress(deployer.address);
   log.info(`proxy admin: ${proxyAdminAddress}`);
+  log.info(`please update deploy/config.ts`);
   await Misc.wait(1);
 }
 

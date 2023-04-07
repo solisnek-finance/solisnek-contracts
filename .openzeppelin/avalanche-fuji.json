@@ -3,5 +3,154 @@
   "admin": {
     "address": "0xa9B41ce6BD3F781Ead19d33b142270B392e7A5e2",
     "txHash": "0x944cb0a0eae2a87e4de1294861ac0a7e3258e4327d722b5a417072fd63d4b119"
+  },
+  "proxies": [
+    {
+      "address": "0x3d2f265d296A6A57fcF5F92788a5174C1dbf93A5",
+      "txHash": "0x89de22405d70147e0c490c8590c6c0ecbcc1d867d9d1da2636505f205e089dcb",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "d6a03e5f5e5df2b8da5e0010c5030446c076cd8aebb1407354d50cbba4698638": {
+      "address": "0x75200D014fA83895BfE87d2f03e890365bc955a5",
+      "txHash": "0x7f28484f90361a4b51a20644b759aca2062711cf608a73840eeca1913928ba61",
+      "layout": {
+        "solcVersion": "0.8.18",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "duration",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_uint256",
+            "contract": "MerkleClaimVeNFT",
+            "src": "contracts/MerkleClaimVeNFT.sol:16"
+          },
+          {
+            "label": "startTime",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_uint256",
+            "contract": "MerkleClaimVeNFT",
+            "src": "contracts/MerkleClaimVeNFT.sol:17"
+          },
+          {
+            "label": "ve",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_contract(IVotingEscrow)1694",
+            "contract": "MerkleClaimVeNFT",
+            "src": "contracts/MerkleClaimVeNFT.sol:21"
+          },
+          {
+            "label": "underlying",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_contract(IERC20)1548",
+            "contract": "MerkleClaimVeNFT",
+            "src": "contracts/MerkleClaimVeNFT.sol:24"
+          },
+          {
+            "label": "merkleRoot",
+            "offset": 0,
+            "slot": "105",
+            "type": "t_bytes32",
+            "contract": "MerkleClaimVeNFT",
+            "src": "contracts/MerkleClaimVeNFT.sol:29"
+          },
+          {
+            "label": "hasClaimed",
+            "offset": 0,
+            "slot": "106",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "MerkleClaimVeNFT",
+            "src": "contracts/MerkleClaimVeNFT.sol:32"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IERC20)1548": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IVotingEscrow)1694": {
+            "label": "contract IVotingEscrow",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
   }
 }

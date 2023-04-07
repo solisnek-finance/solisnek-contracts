@@ -56,6 +56,13 @@ deploy/vote-system.ts
 | RewardsDistributor    | 0xeeee794A5dd290Eb5CC92598A08EB61fE6D5f261 |
 | Minter                | 0xeeee84244DD0A1dE06493A0252dC02A238C04988 |
 
+## Utilities
+
+| Contract         | Address                                    |
+| ---------------- | ------------------------------------------ |
+| LGE              | TBD                                        |
+| MerkleClaimVeNFT | 0x3d2f265d296A6A57fcF5F92788a5174C1dbf93A5 |
+
 ### Test Tokens
 
 | Token | Address                                    |

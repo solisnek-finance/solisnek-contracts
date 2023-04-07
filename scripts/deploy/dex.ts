@@ -1,5 +1,6 @@
 import { ethers } from "hardhat";
 import { BigNumberish, Contract } from "ethers";
+import * as config from "./config";
 import { Deploy } from "../utils/deploy";
 import { Verify } from "../utils/verify";
 import { Misc } from "../utils/misc";
@@ -32,19 +33,15 @@ const deployItems: deployItem[] = [
 
 const pairLogic = "0x95171AA21A29A3cFa53BaB78345DD939fBb19802";
 const voterAddress = "0xeeee674b981F7A0266c099bdD8150B137996cC31"; // salt: 2106312492
-const msig = "0x74D638baa8c073C8528745D0F8fBCB6FCd0fC1a2";
-const deployerAddress = "0x3C252a188Aa35D5B08Ca141d79CBDC951Bc160F0";
-const proxyAdminAddress = "0xa9B41ce6BD3F781Ead19d33b142270B392e7A5e2";
-const weth = "0xd00ae08403b9bbb9124bb305c09058e32c39a48c";
 
 async function main() {
   const signer = (await ethers.getSigners())[0];
   const deployerContract = await ethers.getContractFactory("Deployer", signer);
-  const deployer = deployerContract.attach(deployerAddress);
+  const deployer = deployerContract.attach(config.deployerAddress);
 
   const logics = deployItems.map((item) => item.logic);
   const salts = deployItems.map((item) => item.salt);
-  const proxies = await Deploy.deployProxiesWithDeployer(deployer, logics, proxyAdminAddress, salts);
+  const proxies = await Deploy.deployProxiesWithDeployer(deployer, logics, config.proxyAdminAddress, salts);
   deployItems.map((item, idx) => log.info(`proxy ${item.name}:`, proxies[idx]));
 
   let contracts: { [key: string]: Contract } = {};
@@ -53,9 +50,11 @@ async function main() {
   }
 
   await Misc.runAndWait(() =>
-    (contracts["PairFactory"] as PairFactory).initialize(proxyAdminAddress, pairLogic, voterAddress, msig)
+    (contracts["PairFactory"] as PairFactory).initialize(config.proxyAdminAddress, pairLogic, voterAddress, config.msig)
   );
-  await Misc.runAndWait(() => (contracts["Router"] as Router).initialize(contracts["PairFactory"].address, weth));
+  await Misc.runAndWait(() =>
+    (contracts["Router"] as Router).initialize(contracts["PairFactory"].address, config.weth)
+  );
   await Misc.runAndWait(() => (contracts["SnekLibrary"] as SnekLibrary).initialize(contracts["Router"].address));
 
   for (let i = 0; i < proxies.length; i++) {
