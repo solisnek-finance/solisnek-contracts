@@ -49,7 +49,7 @@ contract PairFactory is IPairFactory, Initializable, BaseFactory {
         isPaused = true;
         feeManager = msig;
         stableFee = 2; // 0.02%
-        volatileFee = 2;
+        volatileFee = 20; // 0.2%
         voter = _voter;
         proxyAdmin = _proxyAdmin;
         pairImplementation = _pairImplementation;

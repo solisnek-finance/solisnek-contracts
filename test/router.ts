@@ -618,7 +618,7 @@ async function check(
   if (stable) {
     expect(getWeth0).eq(3.4212);
   } else {
-    expect(getWeth0).eq(9.9979);
+    expect(getWeth0).eq(9.9799);
   }
 
   const balWeth = await weth.balanceOf(owner.address);
@@ -640,6 +640,6 @@ async function check(
   if (stable) {
     expect(getWeth).eq("2.203729271003164159");
   } else {
-    expect(getWeth).eq("4.99949994999492452");
+    expect(getWeth).eq("4.994994994994920195");
   }
 }
