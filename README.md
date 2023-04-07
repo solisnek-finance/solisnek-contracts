@@ -1,7 +1,19 @@
 # SoliSnek Smart Contracts
 
+## Commands
+
+```
+nvm i
+nvm use
+npm i
+
+npm run compile
+npm run test
+```
+
 ## Scripts
 
+```
 deploy/test-token.ts (for testnet only)
 deploy/lge.ts
 deploy/logics.ts
@@ -13,6 +25,7 @@ deploy/dex.ts
 operation/add-liquidity.ts (for weth/usdc)
 operation/verify-pair.ts
 deploy/vote-system.ts
+```
 
 ## Testnet
 
@@ -76,24 +89,9 @@ deploy/vote-system.ts
 
 ## Mainnet
 
-LGE: 0xe1Fa7CBD4a47B0Ebef5a93a2aa9cE8EEA2694e59
+## Utilities
 
-### Implementations
-
-07:12:44 INFO FeeDistributorFactory: 0xD605DAfDFffd7Db34022639a18a5A113f1E0B045
-07:12:44 INFO GaugeFactory: 0x8A125D994d655C7f1dd527282A1F3888C9Ed1Cd9
-07:12:44 INFO PairFactory: 0x0fC46a8Fc906F026E2cBE6a259A70D493fcC9D17
-07:12:44 INFO Minter: 0x70C8173Ba11e22cd3Dd104484c5A362b3042728E
-07:12:44 INFO Pair: 0x5AeF491b234Ce47CAD75f917C242610Ae994f581
-07:12:44 INFO RewardsDistributor: 0x960588b21ab1693A6F76F3c693019798cCb8988C
-07:12:44 INFO Router: 0xB5116Bc84125E7685b84EA22e9243c5C2E821eae
-07:12:44 INFO Snek: 0xD716fd6763355Faee2615Ac878064f907A456cDd
-07:12:44 INFO SnekLibrary: 0x4390aDF0C2Eb0494D251a49c0435f06F1762D8bE
-07:12:44 INFO VeArtProxy: 0xd377b09E4313c079Dc2aB17a2C1ab58F11e6d819
-07:12:44 INFO Voter: 0x1865051a62Bb670A2b0Df330764990d16D2B3019
-07:12:44 INFO VotingEscrow: 0x7C3623a1C6284EcdBb6B0a63c18ba487a202a45c
-
-### Deployer
-
-proxy admin: 0xCa6F5401C608d0E8242c638bd30af0F594A97118
-deployer: 0x0EC828edd906CD602D619a78e02c66CaeDF61440
+| Contract         | Address                                    |
+| ---------------- | ------------------------------------------ |
+| LGE              | 0xe1Fa7CBD4a47B0Ebef5a93a2aa9cE8EEA2694e59 |
+| MerkleClaimVeNFT | TBD                                        |
