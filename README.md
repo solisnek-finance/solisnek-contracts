@@ -89,9 +89,57 @@ deploy/vote-system.ts
 
 ## Mainnet
 
+### Implementations
+
+| Contract              | Address                                                                                                                    |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Snek                  | [0x68de44f52742a976EcA528dD353F4cF7FC4e09a8](https://snowtrace.io/address/0x68de44f52742a976EcA528dD353F4cF7FC4e09a8#code) |
+| PairFactory           | [0x0bb975694606FAAd8Ac49A32434751090DF5a464](https://snowtrace.io/address/0x0bb975694606FAAd8Ac49A32434751090DF5a464#code) |
+| Pair                  | [0x9eF38d9A074bfEBe21B13c3D287D4D82C3976280](https://snowtrace.io/address/0x9eF38d9A074bfEBe21B13c3D287D4D82C3976280#code) |
+| Router                | [0x47717ddbB816AB308944E22bfe6598Bf8a5Cb998](https://snowtrace.io/address/0x47717ddbB816AB308944E22bfe6598Bf8a5Cb998#code) |
+| SnekLibrary           | [0x2Df68b22A7664B27e51585BB62C927a20c9E921A](https://snowtrace.io/address/0x2Df68b22A7664B27e51585BB62C927a20c9E921A#code) |
+| VeArtProxy            | TBD                                                                                                                        |
+| VotingEscrow          | TBD                                                                                                                        |
+| FeeDistributorFactory | TBD                                                                                                                        |
+| GaugeFactory          | TBD                                                                                                                        |
+| Voter                 | TBD                                                                                                                        |
+| RewardsDistributor    | TBD                                                                                                                        |
+| Minter                | TBD                                                                                                                        |
+
+### Deployer
+
+| Contract   | Address                                                                                                                    |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------- |
+| ProxyAdmin | [0xCa6F5401C608d0E8242c638bd30af0F594A97118](https://snowtrace.io/address/0xCa6F5401C608d0E8242c638bd30af0F594A97118#code) |
+| Deployer   | [0x206E32878ff6663Fcf3DE8907876Bd380762FE25](https://snowtrace.io/address/0x206E32878ff6663Fcf3DE8907876Bd380762FE25#code) |
+
+### Proxies
+
+| Contract              | Address                                                                                                                            |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Snek                  | [0xeeee99b35Eb6aF5E7d76dd846DbE4bcc0c60cA1d](https://testnet.snowtrace.io/address/0xeeee99b35Eb6aF5E7d76dd846DbE4bcc0c60cA1d#code) |
+| PairFactory           | [0xeeee1F1c93836B2CAf8B9E929cb978c35d46657E](https://testnet.snowtrace.io/address/0xeeee99b35Eb6aF5E7d76dd846DbE4bcc0c60cA1d#code) |
+| Router                | [0xeeee17b45E4d127cFaAAD14e2710489523ADB4d8](https://testnet.snowtrace.io/address/0xeeee99b35Eb6aF5E7d76dd846DbE4bcc0c60cA1d#code) |
+| SnekLibrary           | [0xeeee1A2Dd20FaeBef70b0fD7EA0673127c0366F2](https://testnet.snowtrace.io/address/0xeeee99b35Eb6aF5E7d76dd846DbE4bcc0c60cA1d#code) |
+| VeArtProxy            | TBD                                                                                                                                |
+| VotingEscrow          | TBD                                                                                                                                |
+| FeeDistributorFactory | TBD                                                                                                                                |
+| GaugeFactory          | TBD                                                                                                                                |
+| Voter                 | TBD                                                                                                                                |
+| RewardsDistributor    | TBD                                                                                                                                |
+| Minter                | TBD                                                                                                                                |
+
 ### Utilities
 
 | Contract         | Address                                                                                                                    |
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | LGE              | [0xe1Fa7CBD4a47B0Ebef5a93a2aa9cE8EEA2694e59](https://snowtrace.io/address/0xe1Fa7CBD4a47B0Ebef5a93a2aa9cE8EEA2694e59#code) |
 | MerkleClaimVeNFT | TBD                                                                                                                        |
+
+### Tokens
+
+| Token | Address                                                                                                                    |
+| ----- | -------------------------------------------------------------------------------------------------------------------------- |
+| wavax | [0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7](https://snowtrace.io/address/0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7#code) |
+| usdc  | [0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E](https://snowtrace.io/address/0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E#code) |
+| usdt  | [0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7](https://snowtrace.io/address/0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7#code) |

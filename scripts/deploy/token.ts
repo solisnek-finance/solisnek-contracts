@@ -5,8 +5,8 @@ import { Verify } from "../utils/verify";
 import { Misc } from "../utils/misc";
 import { log } from "../utils/log";
 
-const salt = 2701492802;
-const logic = "0xfF7Dcc26D9a5E24974f27936BEA2895532F373a5";
+const salt = 4908942;
+const logic = "0x68de44f52742a976EcA528dD353F4cF7FC4e09a8";
 
 async function main() {
   const signer = (await ethers.getSigners())[0];

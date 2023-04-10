@@ -16,23 +16,23 @@ interface deployItem {
 const deployItems: deployItem[] = [
   {
     name: "PairFactory",
-    logic: "0xA15302aECD6C9646AEA06E429Af83d0DFD358501",
-    salt: 2506028809, // 0xeeee175CC85Db8D1245094B0f83e39b0128a8D6B
+    logic: "0x0bb975694606FAAd8Ac49A32434751090DF5a464",
+    salt: 806919796, // 0xeeee1F1c93836B2CAf8B9E929cb978c35d46657E
   },
   {
     name: "Router",
-    logic: "0x62bca03dFc65FfC9c9D96bA1AB6cc2135eFF6b52",
-    salt: 2000672741, // 0xeeee1b84A9D7F1648ee1537D23E233283B042FA1
+    logic: "0x47717ddbB816AB308944E22bfe6598Bf8a5Cb998",
+    salt: 405794531, // 0xeeee17b45E4d127cFaAAD14e2710489523ADB4d8
   },
   {
     name: "SnekLibrary",
-    logic: "0x991673ca3cD1e0960463bDa7cFC688C2867c080F",
-    salt: 2003705733, // 0xeeee107104Dc4Bd4b3339eF6e9081572ac015DF4
+    logic: "0x2Df68b22A7664B27e51585BB62C927a20c9E921A",
+    salt: 602964433, // 0xeeee1A2Dd20FaeBef70b0fD7EA0673127c0366F2
   },
 ];
 
-const pairLogic = "0x95171AA21A29A3cFa53BaB78345DD939fBb19802";
-const voterAddress = "0xeeee674b981F7A0266c099bdD8150B137996cC31"; // salt: 2106312492
+const pairLogic = "0x9eF38d9A074bfEBe21B13c3D287D4D82C3976280";
+const voterAddress = "0xeeee6FA8A6f8F32d76abAb2131f9e8aeb1b0B02B"; // salt: 911072606
 
 async function main() {
   const signer = (await ethers.getSigners())[0];

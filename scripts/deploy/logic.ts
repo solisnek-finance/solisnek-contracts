@@ -4,7 +4,7 @@ import { Verify } from "../utils/verify";
 import { Misc } from "../utils/misc";
 import { log } from "../utils/log";
 
-const name = "FeeDistributor";
+const name = "Voter";
 
 async function main() {
   const signer = (await ethers.getSigners())[0];
