@@ -55,19 +55,19 @@ deploy/vote-system.ts
 
 ### Proxies
 
-| Contract              | Address                                                                                                                            |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| Snek                  | [0xeeee99b35Eb6aF5E7d76dd846DbE4bcc0c60cA1d](https://testnet.snowtrace.io/address/0xeeee99b35Eb6aF5E7d76dd846DbE4bcc0c60cA1d#code) |
-| PairFactory           | [0xeeee1F1c93836B2CAf8B9E929cb978c35d46657E](https://testnet.snowtrace.io/address/0xeeee99b35Eb6aF5E7d76dd846DbE4bcc0c60cA1d#code) |
-| Router                | [0xeeee17b45E4d127cFaAAD14e2710489523ADB4d8](https://testnet.snowtrace.io/address/0xeeee99b35Eb6aF5E7d76dd846DbE4bcc0c60cA1d#code) |
-| SnekLibrary           | [0xeeee1A2Dd20FaeBef70b0fD7EA0673127c0366F2](https://testnet.snowtrace.io/address/0xeeee99b35Eb6aF5E7d76dd846DbE4bcc0c60cA1d#code) |
-| VeArtProxy            | TBD                                                                                                                                |
-| VotingEscrow          | TBD                                                                                                                                |
-| FeeDistributorFactory | TBD                                                                                                                                |
-| GaugeFactory          | TBD                                                                                                                                |
-| Voter                 | TBD                                                                                                                                |
-| RewardsDistributor    | TBD                                                                                                                                |
-| Minter                | TBD                                                                                                                                |
+| Contract              | Address                                                                                                                    |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Snek                  | [0xeeee99b35Eb6aF5E7d76dd846DbE4bcc0c60cA1d](https://snowtrace.io/address/0xeeee99b35Eb6aF5E7d76dd846DbE4bcc0c60cA1d#code) |
+| PairFactory           | [0xeeee1F1c93836B2CAf8B9E929cb978c35d46657E](https://snowtrace.io/address/0xeeee99b35Eb6aF5E7d76dd846DbE4bcc0c60cA1d#code) |
+| Router                | [0xeeee17b45E4d127cFaAAD14e2710489523ADB4d8](https://snowtrace.io/address/0xeeee99b35Eb6aF5E7d76dd846DbE4bcc0c60cA1d#code) |
+| SnekLibrary           | [0xeeee1A2Dd20FaeBef70b0fD7EA0673127c0366F2](https://snowtrace.io/address/0xeeee99b35Eb6aF5E7d76dd846DbE4bcc0c60cA1d#code) |
+| VeArtProxy            | TBD                                                                                                                        |
+| VotingEscrow          | TBD                                                                                                                        |
+| FeeDistributorFactory | TBD                                                                                                                        |
+| GaugeFactory          | TBD                                                                                                                        |
+| Voter                 | TBD                                                                                                                        |
+| RewardsDistributor    | TBD                                                                                                                        |
+| Minter                | TBD                                                                                                                        |
 
 ### Utilities
 
