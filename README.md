@@ -7,16 +7,16 @@
 | Contract              | Address                                                                                                                    |
 | --------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | Snek                  | [0xeeee99b35Eb6aF5E7d76dd846DbE4bcc0c60cA1d](https://snowtrace.io/address/0xeeee99b35Eb6aF5E7d76dd846DbE4bcc0c60cA1d#code) |
-| PairFactory           | [0xeeee1F1c93836B2CAf8B9E929cb978c35d46657E](https://snowtrace.io/address/0xeeee99b35Eb6aF5E7d76dd846DbE4bcc0c60cA1d#code) |
-| Router                | [0xeeee17b45E4d127cFaAAD14e2710489523ADB4d8](https://snowtrace.io/address/0xeeee99b35Eb6aF5E7d76dd846DbE4bcc0c60cA1d#code) |
-| SnekLibrary           | [0xeeee1A2Dd20FaeBef70b0fD7EA0673127c0366F2](https://snowtrace.io/address/0xeeee99b35Eb6aF5E7d76dd846DbE4bcc0c60cA1d#code) |
-| VeArtProxy            | TBD                                                                                                                        |
-| VotingEscrow          | TBD                                                                                                                        |
-| FeeDistributorFactory | TBD                                                                                                                        |
-| GaugeFactory          | TBD                                                                                                                        |
-| Voter                 | TBD                                                                                                                        |
-| RewardsDistributor    | TBD                                                                                                                        |
-| Minter                | TBD                                                                                                                        |
+| PairFactory           | [0xeeee1F1c93836B2CAf8B9E929cb978c35d46657E](https://snowtrace.io/address/0xeeee1F1c93836B2CAf8B9E929cb978c35d46657E#code) |
+| Router                | [0xeeee17b45E4d127cFaAAD14e2710489523ADB4d8](https://snowtrace.io/address/0xeeee17b45E4d127cFaAAD14e2710489523ADB4d8#code) |
+| SnekLibrary           | [0xeeee1A2Dd20FaeBef70b0fD7EA0673127c0366F2](https://snowtrace.io/address/0xeeee1A2Dd20FaeBef70b0fD7EA0673127c0366F2#code) |
+| VeArtProxy            | [0xeeee23a91CF79df61f1f303E0909d879267F0312](https://snowtrace.io/address/0xeeee23a91CF79df61f1f303E0909d879267F0312#code) |
+| VotingEscrow          | [0xeeee3Bf0E550505C0C17a8432065F2f6b9D06350](https://snowtrace.io/address/0xeeee3Bf0E550505C0C17a8432065F2f6b9D06350#code) |
+| FeeDistributorFactory | [0xeeee41e5A1cc225520C21995D3A1Ed7AdC88540F](https://snowtrace.io/address/0xeeee41e5A1cc225520C21995D3A1Ed7AdC88540F#code) |
+| GaugeFactory          | [0xeeee50F6d5b7A80719fB2F9270E200da74667D77](https://snowtrace.io/address/0xeeee50F6d5b7A80719fB2F9270E200da74667D77#code) |
+| Voter                 | [0xeeee6FA8A6f8F32d76abAb2131f9e8aeb1b0B02B](https://snowtrace.io/address/0xeeee6FA8A6f8F32d76abAb2131f9e8aeb1b0B02B#code) |
+| RewardsDistributor    | [0xeeee78711E6F895D724D08CAE89144A0E1399a96](https://snowtrace.io/address/0xeeee78711E6F895D724D08CAE89144A0E1399a96#code) |
+| Minter                | [0xeeee869110d3dEABD559FBfc1D9387cb2adB540f](https://snowtrace.io/address/0xeeee869110d3dEABD559FBfc1D9387cb2adB540f#code) |
 
 ### Utilities
 
@@ -41,13 +41,13 @@
 | Pair                  | [0x9eF38d9A074bfEBe21B13c3D287D4D82C3976280](https://snowtrace.io/address/0x9eF38d9A074bfEBe21B13c3D287D4D82C3976280#code) |
 | Router                | [0x47717ddbB816AB308944E22bfe6598Bf8a5Cb998](https://snowtrace.io/address/0x47717ddbB816AB308944E22bfe6598Bf8a5Cb998#code) |
 | SnekLibrary           | [0x2Df68b22A7664B27e51585BB62C927a20c9E921A](https://snowtrace.io/address/0x2Df68b22A7664B27e51585BB62C927a20c9E921A#code) |
-| VeArtProxy            | TBD                                                                                                                        |
-| VotingEscrow          | TBD                                                                                                                        |
-| FeeDistributorFactory | TBD                                                                                                                        |
-| GaugeFactory          | TBD                                                                                                                        |
-| Voter                 | TBD                                                                                                                        |
-| RewardsDistributor    | TBD                                                                                                                        |
-| Minter                | TBD                                                                                                                        |
+| VeArtProxy            | [0x640C7Ad857876b52F7b75c0C1E9645d47262f1cA](https://snowtrace.io/address/0x640C7Ad857876b52F7b75c0C1E9645d47262f1cA#code) |
+| VotingEscrow          | [0xf935525e23B538fdc10E121673d7170D5C8449D0](https://snowtrace.io/address/0xf935525e23B538fdc10E121673d7170D5C8449D0#code) |
+| FeeDistributorFactory | [0xFe600207Ab4fe7C5faFB8529430C7530755fedA5](https://snowtrace.io/address/0xFe600207Ab4fe7C5faFB8529430C7530755fedA5#code) |
+| GaugeFactory          | [0xEDb68bd2dFDA1d7A008F1B34AeB8eA7cd63A128F](https://snowtrace.io/address/0xEDb68bd2dFDA1d7A008F1B34AeB8eA7cd63A128F#code) |
+| Voter                 | [0x5138fccd7bc5df1da3d4e47d6bbbf3873ddb4eb3](https://snowtrace.io/address/0x5138fccd7bc5df1da3d4e47d6bbbf3873ddb4eb3#code) |
+| RewardsDistributor    | [0x2A8fcA4f2cE3d259C5522bfaeEB78bB772364E77](https://snowtrace.io/address/0x2A8fcA4f2cE3d259C5522bfaeEB78bB772364E77#code) |
+| Minter                | [0x454D28D86BBB471262DC88EA776B0FfD9CF9fBdC](https://snowtrace.io/address/0x454D28D86BBB471262DC88EA776B0FfD9CF9fBdC#code) |
 
 ### Tokens
 

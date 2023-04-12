@@ -24,45 +24,45 @@ interface deployItem {
 const deployItems: deployItem[] = [
   {
     name: "VeArtProxy",
-    logic: "0xd09Cffc843710749B550b299243A7ff84b462fd1",
-    salt: 2300625080, // 0xeeee22cd7047966eDBE47Ff5698d34159C953cCF
+    logic: "0x640C7Ad857876b52F7b75c0C1E9645d47262f1cA",
+    salt: 605010931, // 0xeeee23a91CF79df61f1f303E0909d879267F0312
   },
   {
     name: "VotingEscrow",
-    logic: "0x270ef8f7364EE60CE0b486e90E5f99Bc2eb9Ea96",
-    salt: 2400799666, // 0xeeee3823509dF4819F3D7F4B93D314e9a2fc8d9f
+    logic: "0xf935525e23B538fdc10E121673d7170D5C8449D0",
+    salt: 2874281, // 0xeeee3Bf0E550505C0C17a8432065F2f6b9D06350
   },
   {
     name: "FeeDistributorFactory",
-    logic: "0x53B6c760282767dd9F8b5c518a725B91Dc906428",
-    salt: 2901074993, // 0xeeee461cFc20E385891380BC5d4DACc258ff50F5
+    logic: "0xFe600207Ab4fe7C5faFB8529430C7530755fedA5",
+    salt: 502899081, // 0xeeee41e5A1cc225520C21995D3A1Ed7AdC88540F
   },
   {
     name: "GaugeFactory",
-    logic: "0x9Dd766Df594D787Bb3f07438d135c4C42d31E4dF",
-    salt: 2300002519, // 0xeeee55A381ca608B45a550A0c261B9ADa9C645f5
+    logic: "0xEDb68bd2dFDA1d7A008F1B34AeB8eA7cd63A128F",
+    salt: 100060959, // 0xeeee50F6d5b7A80719fB2F9270E200da74667D77
   },
   {
     name: "Voter",
-    logic: "0x4184C04A7f7c8cB002Fe3F067ad570dBfbF64d75",
-    salt: 2106312492, // 0xeeee674b981F7A0266c099bdD8150B137996cC31
+    logic: "0x5138fccd7bc5df1da3d4e47d6bbbf3873ddb4eb3",
+    salt: 911072606, // 0xeeee6FA8A6f8F32d76abAb2131f9e8aeb1b0B02B
   },
   {
     name: "RewardsDistributor",
-    logic: "0x64088aA4B2876473809fC0fEe2372b554226fe09",
-    salt: 2300961848, // 0xeeee794A5dd290Eb5CC92598A08EB61fE6D5f261
+    logic: "0x2A8fcA4f2cE3d259C5522bfaeEB78bB772364E77",
+    salt: 800129420, // 0xeeee78711E6F895D724D08CAE89144A0E1399a96
   },
   {
     name: "Minter",
-    logic: "0xAeD4184C0e14DD77af0c980bB8DDcA8f0715A581",
-    salt: 2001995303, // 0xeeee84244DD0A1dE06493A0252dC02A238C04988
+    logic: "0x454D28D86BBB471262DC88EA776B0FfD9CF9fBdC",
+    salt: 601888244, // 0xeeee869110d3dEABD559FBfc1D9387cb2adB540f
   },
 ];
 
-const initialSupply = "1000000000000000000000000000"; // 1M
+const initialSupply = "0";
 
-const snek = "0xeeee97AC0f417D220dFfA3DCCbf6121C53541513";
-const pairFactoryAddress = "0xeeee175CC85Db8D1245094B0f83e39b0128a8D6B";
+const snek = "0xeeee99b35Eb6aF5E7d76dd846DbE4bcc0c60cA1d";
+const pairFactoryAddress = "0xeeee1F1c93836B2CAf8B9E929cb978c35d46657E";
 
 async function main() {
   const signer = (await ethers.getSigners())[0];
