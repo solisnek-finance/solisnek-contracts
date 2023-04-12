@@ -98,7 +98,7 @@
 | Pair                  | [0x95171AA21A29A3cFa53BaB78345DD939fBb19802](https://testnet.snowtrace.io/address/0x95171AA21A29A3cFa53BaB78345DD939fBb19802#code) |
 | Router                | [0x62bca03dFc65FfC9c9D96bA1AB6cc2135eFF6b52](https://testnet.snowtrace.io/address/0x62bca03dFc65FfC9c9D96bA1AB6cc2135eFF6b52#code) |
 | SnekLibrary           | [0x991673ca3cD1e0960463bDa7cFC688C2867c080F](https://testnet.snowtrace.io/address/0x991673ca3cD1e0960463bDa7cFC688C2867c080F#code) |
-| VeArtProxy            | [0xd09Cffc843710749B550b299243A7ff84b462fd1](https://testnet.snowtrace.io/address/0xd09Cffc843710749B550b299243A7ff84b462fd1#code) |
+| VeArtProxy            | [0x4593a1f4a738c48A0d618331d9560A4908C594E6](https://testnet.snowtrace.io/address/0x4593a1f4a738c48A0d618331d9560A4908C594E6#code) |
 | VotingEscrow          | [0x270ef8f7364EE60CE0b486e90E5f99Bc2eb9Ea96](https://testnet.snowtrace.io/address/0x270ef8f7364EE60CE0b486e90E5f99Bc2eb9Ea96#code) |
 | FeeDistributorFactory | [0x53B6c760282767dd9F8b5c518a725B91Dc906428](https://testnet.snowtrace.io/address/0x53B6c760282767dd9F8b5c518a725B91Dc906428#code) |
 | GaugeFactory          | [0x9Dd766Df594D787Bb3f07438d135c4C42d31E4dF](https://testnet.snowtrace.io/address/0x9Dd766Df594D787Bb3f07438d135c4C42d31E4dF#code) |

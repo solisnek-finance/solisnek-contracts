@@ -7,5 +7,5 @@ interface IVeArtProxy {
         uint _balanceOf,
         uint _locked_end,
         uint _value
-    ) external pure returns (string memory output);
+    ) external view returns (string memory output);
 }
