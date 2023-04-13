@@ -4,7 +4,7 @@ import { Verify } from "../utils/verify";
 import { Misc } from "../utils/misc";
 import { log } from "../utils/log";
 
-const name = "Voter";
+const name = "MerkleClaimVeNFT";
 
 async function main() {
   const signer = (await ethers.getSigners())[0];

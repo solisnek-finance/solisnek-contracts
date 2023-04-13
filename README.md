@@ -23,7 +23,7 @@
 | Contract         | Address                                                                                                                    |
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | LGE              | [0xe1Fa7CBD4a47B0Ebef5a93a2aa9cE8EEA2694e59](https://snowtrace.io/address/0xe1Fa7CBD4a47B0Ebef5a93a2aa9cE8EEA2694e59#code) |
-| MerkleClaimVeNFT | TBD                                                                                                                        |
+| MerkleClaimVeNFT | [0xe1E194aAcf04Ee1Eb1e9C161394b4a3ae3ebe177](https://snowtrace.io/address/0xe1E194aAcf04Ee1Eb1e9C161394b4a3ae3ebe177#code) |
 
 ### Deployer
 
