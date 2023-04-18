@@ -27,10 +27,12 @@
 
 ### Deployer
 
-| Contract   | Address                                                                                                                    |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------- |
-| ProxyAdmin | [0xCa6F5401C608d0E8242c638bd30af0F594A97118](https://snowtrace.io/address/0xCa6F5401C608d0E8242c638bd30af0F594A97118#code) |
-| Deployer   | [0x206E32878ff6663Fcf3DE8907876Bd380762FE25](https://snowtrace.io/address/0x206E32878ff6663Fcf3DE8907876Bd380762FE25#code) |
+| Contract     | Address                                                                                                                    |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------- |
+| Multisig     | [0x60ffd8fE07AEaE3D15572354395Cb36bdBfCE5Af](https://snowtrace.io/address/0x60ffd8fE07AEaE3D15572354395Cb36bdBfCE5Af#code) |
+| SnekTimelock | [0x1C6a28ba170e5b2ba9dbfA990773EcA1143542b0](https://snowtrace.io/address/0x1C6a28ba170e5b2ba9dbfA990773EcA1143542b0#code) |
+| ProxyAdmin   | [0xCa6F5401C608d0E8242c638bd30af0F594A97118](https://snowtrace.io/address/0xCa6F5401C608d0E8242c638bd30af0F594A97118#code) |
+| Deployer     | [0x206E32878ff6663Fcf3DE8907876Bd380762FE25](https://snowtrace.io/address/0x206E32878ff6663Fcf3DE8907876Bd380762FE25#code) |
 
 ### Implementations
 
@@ -84,10 +86,12 @@
 
 ### Deployer
 
-| Contract   | Address                                                                                                                            |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| ProxyAdmin | [0xa9B41ce6BD3F781Ead19d33b142270B392e7A5e2](https://testnet.snowtrace.io/address/0xa9B41ce6BD3F781Ead19d33b142270B392e7A5e2#code) |
-| Deployer   | [0x3C252a188Aa35D5B08Ca141d79CBDC951Bc160F0](https://testnet.snowtrace.io/address/0x3C252a188Aa35D5B08Ca141d79CBDC951Bc160F0#code) |
+| Contract     | Address                                                                                                                            |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Multisig     | [0x74D638baa8c073C8528745D0F8fBCB6FCd0fC1a2](https://testnet.snowtrace.io/address/0x74D638baa8c073C8528745D0F8fBCB6FCd0fC1a2#code) |
+| SnekTimelock | [0x0c1F835F2D439EF446157a575fFab0b09205FcD6](https://testnet.snowtrace.io/address/0x0c1F835F2D439EF446157a575fFab0b09205FcD6#code) |
+| ProxyAdmin   | [0xa9B41ce6BD3F781Ead19d33b142270B392e7A5e2](https://testnet.snowtrace.io/address/0xa9B41ce6BD3F781Ead19d33b142270B392e7A5e2#code) |
+| Deployer     | [0x3C252a188Aa35D5B08Ca141d79CBDC951Bc160F0](https://testnet.snowtrace.io/address/0x3C252a188Aa35D5B08Ca141d79CBDC951Bc160F0#code) |
 
 ### Implementations
 
