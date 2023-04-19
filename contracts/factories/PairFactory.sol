@@ -35,7 +35,7 @@ contract PairFactory is IPairFactory, Initializable, BaseFactory {
     event PairCreated(address indexed token0, address indexed token1, bool stable, address pair, uint256);
 
     modifier onlyAdmin() {
-        require(msg.sender == 0x2aE2A1F05e9d5De2493B6679158Cd02Ed059Ff59, "!admin");
+        require(msg.sender == 0x1C6a28ba170e5b2ba9dbfA990773EcA1143542b0, "!admin");
         _;
     }
 
@@ -112,6 +112,14 @@ contract PairFactory is IPairFactory, Initializable, BaseFactory {
             return _stable ? stableFee : volatileFee;
         } else {
             return pairFee[msg.sender];
+        }
+    }
+
+    function getPairFee(address pair, bool _stable) public view returns (uint256) {
+        if (pairFee[pair] == 0) {
+            return _stable ? stableFee : volatileFee;
+        } else {
+            return pairFee[pair];
         }
     }
 

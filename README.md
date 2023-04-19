@@ -39,14 +39,14 @@
 | Contract              | Address                                                                                                                    |
 | --------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | Snek                  | [0x68de44f52742a976EcA528dD353F4cF7FC4e09a8](https://snowtrace.io/address/0x68de44f52742a976EcA528dD353F4cF7FC4e09a8#code) |
-| PairFactory           | [0x0bb975694606FAAd8Ac49A32434751090DF5a464](https://snowtrace.io/address/0x0bb975694606FAAd8Ac49A32434751090DF5a464#code) |
+| PairFactory           | [0x9b9e09E92D4Df1cFEf7eeE370953cF1E4f273c99](https://snowtrace.io/address/0x9b9e09E92D4Df1cFEf7eeE370953cF1E4f273c99#code) |
 | Pair                  | [0x9eF38d9A074bfEBe21B13c3D287D4D82C3976280](https://snowtrace.io/address/0x9eF38d9A074bfEBe21B13c3D287D4D82C3976280#code) |
 | Router                | [0x47717ddbB816AB308944E22bfe6598Bf8a5Cb998](https://snowtrace.io/address/0x47717ddbB816AB308944E22bfe6598Bf8a5Cb998#code) |
 | SnekLibrary           | [0x2Df68b22A7664B27e51585BB62C927a20c9E921A](https://snowtrace.io/address/0x2Df68b22A7664B27e51585BB62C927a20c9E921A#code) |
 | VeArtProxy            | [0x640C7Ad857876b52F7b75c0C1E9645d47262f1cA](https://snowtrace.io/address/0x640C7Ad857876b52F7b75c0C1E9645d47262f1cA#code) |
 | VotingEscrow          | [0xf935525e23B538fdc10E121673d7170D5C8449D0](https://snowtrace.io/address/0xf935525e23B538fdc10E121673d7170D5C8449D0#code) |
-| FeeDistributorFactory | [0xFe600207Ab4fe7C5faFB8529430C7530755fedA5](https://snowtrace.io/address/0xFe600207Ab4fe7C5faFB8529430C7530755fedA5#code) |
-| GaugeFactory          | [0xEDb68bd2dFDA1d7A008F1B34AeB8eA7cd63A128F](https://snowtrace.io/address/0xEDb68bd2dFDA1d7A008F1B34AeB8eA7cd63A128F#code) |
+| FeeDistributorFactory | [0x03DB9d777E1c447982Ca2b96fC96C386f8dA25a8](https://snowtrace.io/address/0x03DB9d777E1c447982Ca2b96fC96C386f8dA25a8#code) |
+| GaugeFactory          | [0x79D382163A0E0d4857904727e9c1662aD6983DdE](https://snowtrace.io/address/0x79D382163A0E0d4857904727e9c1662aD6983DdE#code) |
 | Voter                 | [0x5138fccd7bc5df1da3d4e47d6bbbf3873ddb4eb3](https://snowtrace.io/address/0x5138fccd7bc5df1da3d4e47d6bbbf3873ddb4eb3#code) |
 | RewardsDistributor    | [0x2A8fcA4f2cE3d259C5522bfaeEB78bB772364E77](https://snowtrace.io/address/0x2A8fcA4f2cE3d259C5522bfaeEB78bB772364E77#code) |
 | Minter                | [0x454D28D86BBB471262DC88EA776B0FfD9CF9fBdC](https://snowtrace.io/address/0x454D28D86BBB471262DC88EA776B0FfD9CF9fBdC#code) |
@@ -98,7 +98,7 @@
 | Contract              | Address                                                                                                                            |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | Snek                  | [0xfF7Dcc26D9a5E24974f27936BEA2895532F373a5](https://testnet.snowtrace.io/address/0xfF7Dcc26D9a5E24974f27936BEA2895532F373a5#code) |
-| PairFactory           | [0xA15302aECD6C9646AEA06E429Af83d0DFD358501](https://testnet.snowtrace.io/address/0xA15302aECD6C9646AEA06E429Af83d0DFD358501#code) |
+| PairFactory           | [0x35d1832d3E2Dd8aa2De8fdE2E456175C39F1f6C2](https://testnet.snowtrace.io/address/0x35d1832d3E2Dd8aa2De8fdE2E456175C39F1f6C2#code) |
 | Pair                  | [0x95171AA21A29A3cFa53BaB78345DD939fBb19802](https://testnet.snowtrace.io/address/0x95171AA21A29A3cFa53BaB78345DD939fBb19802#code) |
 | Router                | [0x62bca03dFc65FfC9c9D96bA1AB6cc2135eFF6b52](https://testnet.snowtrace.io/address/0x62bca03dFc65FfC9c9D96bA1AB6cc2135eFF6b52#code) |
 | SnekLibrary           | [0x991673ca3cD1e0960463bDa7cFC688C2867c080F](https://testnet.snowtrace.io/address/0x991673ca3cD1e0960463bDa7cFC688C2867c080F#code) |

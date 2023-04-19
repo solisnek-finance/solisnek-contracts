@@ -18,7 +18,7 @@ contract FeeDistributorFactory is IFeeDistributorFactory, BaseFactory, Initializ
     address public feeDistributorImplementation;
 
     modifier onlyAdmin() {
-        require(msg.sender == 0x2aE2A1F05e9d5De2493B6679158Cd02Ed059Ff59, "!admin");
+        require(msg.sender == 0x1C6a28ba170e5b2ba9dbfA990773EcA1143542b0, "!admin");
         _;
     }
 
