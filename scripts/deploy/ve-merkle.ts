@@ -5,7 +5,7 @@ import { Verify } from "../utils/verify";
 import { Misc } from "../utils/misc";
 import { log } from "../utils/log";
 
-const salt = 200001250;
+const salt = 65526;
 const logic = "0x9eE4c8e02ecE6D8DeD582f219f5BA15CDdd19bBD";
 
 const ve = "0xeeee3Bf0E550505C0C17a8432065F2f6b9D06350";

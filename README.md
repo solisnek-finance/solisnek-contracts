@@ -24,6 +24,7 @@
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | LGE              | [0xe1Fa7CBD4a47B0Ebef5a93a2aa9cE8EEA2694e59](https://snowtrace.io/address/0xe1Fa7CBD4a47B0Ebef5a93a2aa9cE8EEA2694e59#code) |
 | MerkleClaimVeNFT | [0xe1E194aAcf04Ee1Eb1e9C161394b4a3ae3ebe177](https://snowtrace.io/address/0xe1E194aAcf04Ee1Eb1e9C161394b4a3ae3ebe177#code) |
+| LBEA             | [0xe1D6D8e0aB76955910D6A7F1eEA2B90da10C49bA](https://snowtrace.io/address/0xe1D6D8e0aB76955910D6A7F1eEA2B90da10C49bA#code) |
 
 ### Deployer
 
