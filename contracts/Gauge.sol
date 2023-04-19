@@ -142,23 +142,28 @@ contract Gauge is IGauge, Initializable {
         IVoter(voter).distribute(address(this));
         _unlocked = 2;
 
-        uint256 len = tokens.length;
-
+        // update all user rewards regardless of tokens they are claiming
+        address[] memory _rewards = rewards;
+        uint256 len = _rewards.length;
         for (uint256 i; i < len; ++i) {
-            if (isReward[tokens[i]]) {
-                if (!isStarted[tokens[i]]) {
-                    initializeRewardsDistribution(tokens[i]);
+            if (isReward[_rewards[i]]) {
+                if (!isStarted[_rewards[i]]) {
+                    initializeRewardsDistribution(_rewards[i]);
                 }
-                updateRewardPerToken(tokens[i], account);
-                uint256 _reward = storedRewardsPerUser[account][tokens[i]];
-                if (_reward > 0) {
-                    storedRewardsPerUser[account][tokens[i]] = 0;
-
-                    _safeTransfer(tokens[i], account, _reward);
-                    emit ClaimRewards(account, tokens[i], _reward);
-                }
+                updateRewardPerToken(_rewards[i], account);
             }
         }
+        // transfer only the rewards they are claiming
+        len = tokens.length;
+        for (uint256 i; i < len; ++i) {
+            uint256 _reward = storedRewardsPerUser[account][tokens[i]];
+            if (_reward > 0) {
+                storedRewardsPerUser[account][tokens[i]] = 0;
+                _safeTransfer(tokens[i], account, _reward);
+                emit ClaimRewards(account, tokens[i], _reward);
+            }
+        }
+
         uint256 _derivedBalance = derivedBalances[account];
         derivedSupply -= _derivedBalance;
         _derivedBalance = derivedBalance(account);
@@ -287,7 +292,6 @@ contract Gauge is IGauge, Initializable {
         require(token != stake);
         require(amount > 0);
         rewardPerTokenStored[token] = rewardPerToken(token);
-        lastUpdateTime[token] = lastTimeRewardApplicable(token);
         _claimFees();
         // Check actual amount transferred for compatibility with fee on transfer tokens.
         uint balanceBefore = IERC20(token).balanceOf(address(this));
@@ -306,6 +310,7 @@ contract Gauge is IGauge, Initializable {
                 rewardRate[token] = (amount + _left) / DURATION;
             }
             periodFinish[token] = block.timestamp + DURATION;
+            lastUpdateTime[token] = block.timestamp;
         } else {
             if (pendingRewardRate[token] > 0) {
                 uint256 _left = DURATION * pendingRewardRate[token];

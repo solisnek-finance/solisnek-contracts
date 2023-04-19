@@ -46,7 +46,9 @@
 | VeArtProxy            | [0x640C7Ad857876b52F7b75c0C1E9645d47262f1cA](https://snowtrace.io/address/0x640C7Ad857876b52F7b75c0C1E9645d47262f1cA#code) |
 | VotingEscrow          | [0xf935525e23B538fdc10E121673d7170D5C8449D0](https://snowtrace.io/address/0xf935525e23B538fdc10E121673d7170D5C8449D0#code) |
 | FeeDistributorFactory | [0x03DB9d777E1c447982Ca2b96fC96C386f8dA25a8](https://snowtrace.io/address/0x03DB9d777E1c447982Ca2b96fC96C386f8dA25a8#code) |
+| FeeDistributor        | [0x4f29631BBCc4339b7E153207764aE398973d40e8](https://snowtrace.io/address/0x4f29631BBCc4339b7E153207764aE398973d40e8#code) |
 | GaugeFactory          | [0x79D382163A0E0d4857904727e9c1662aD6983DdE](https://snowtrace.io/address/0x79D382163A0E0d4857904727e9c1662aD6983DdE#code) |
+| Gauge                 | [0x77C9483B7CAA0De8D0703ED5254221f168057Cb7](https://snowtrace.io/address/0x77C9483B7CAA0De8D0703ED5254221f168057Cb7#code) |
 | Voter                 | [0x5138fccd7bc5df1da3d4e47d6bbbf3873ddb4eb3](https://snowtrace.io/address/0x5138fccd7bc5df1da3d4e47d6bbbf3873ddb4eb3#code) |
 | RewardsDistributor    | [0x2A8fcA4f2cE3d259C5522bfaeEB78bB772364E77](https://snowtrace.io/address/0x2A8fcA4f2cE3d259C5522bfaeEB78bB772364E77#code) |
 | Minter                | [0x454D28D86BBB471262DC88EA776B0FfD9CF9fBdC](https://snowtrace.io/address/0x454D28D86BBB471262DC88EA776B0FfD9CF9fBdC#code) |
@@ -105,7 +107,9 @@
 | VeArtProxy            | [0x4593a1f4a738c48A0d618331d9560A4908C594E6](https://testnet.snowtrace.io/address/0x4593a1f4a738c48A0d618331d9560A4908C594E6#code) |
 | VotingEscrow          | [0x270ef8f7364EE60CE0b486e90E5f99Bc2eb9Ea96](https://testnet.snowtrace.io/address/0x270ef8f7364EE60CE0b486e90E5f99Bc2eb9Ea96#code) |
 | FeeDistributorFactory | [0x53B6c760282767dd9F8b5c518a725B91Dc906428](https://testnet.snowtrace.io/address/0x53B6c760282767dd9F8b5c518a725B91Dc906428#code) |
+| FeeDistributor        | [0xc4631eF3C45F55B4daA34714712f1812e0A8dA1A](https://testnet.snowtrace.io/address/0xc4631eF3C45F55B4daA34714712f1812e0A8dA1A#code) |
 | GaugeFactory          | [0x9Dd766Df594D787Bb3f07438d135c4C42d31E4dF](https://testnet.snowtrace.io/address/0x9Dd766Df594D787Bb3f07438d135c4C42d31E4dF#code) |
+| Gauge                 | [0xF2A969A94C72502fCf30b10D63Efcb9cFbce4dee](https://testnet.snowtrace.io/address/0xF2A969A94C72502fCf30b10D63Efcb9cFbce4dee#code) |
 | Voter                 | [0x4184C04A7f7c8cB002Fe3F067ad570dBfbF64d75](https://testnet.snowtrace.io/address/0x4184C04A7f7c8cB002Fe3F067ad570dBfbF64d75#code) |
 | RewardsDistributor    | [0x64088aA4B2876473809fC0fEe2372b554226fe09](https://testnet.snowtrace.io/address/0x64088aA4B2876473809fC0fEe2372b554226fe09#code) |
 | Minter                | [0xAeD4184C0e14DD77af0c980bB8DDcA8f0715A581](https://testnet.snowtrace.io/address/0xAeD4184C0e14DD77af0c980bB8DDcA8f0715A581#code) |

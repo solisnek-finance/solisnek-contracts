@@ -156,12 +156,12 @@ contract FeeDistributor is Initializable, IFeeDistributor {
     }
 
     function notifyRewardAmount(address token, uint256 amount) external lock {
-        uint256 period = getPeriod();
+        uint256 period = getPeriod() + WEEK;
 
         // there is no votes for first period, so distribute first period fees to second period voters
-        if (totalVeShareByPeriod[period] == 0) {
-            period += WEEK;
-        }
+        // if (totalVeShareByPeriod[period] == 0) {
+        //     period += WEEK;
+        // }
 
         if (!isReward[token]) {
             isReward[token] = true;
@@ -180,6 +180,11 @@ contract FeeDistributor is Initializable, IFeeDistributor {
     // record bribe amount for next period
     function bribe(address token, uint256 amount) external lock {
         uint256 period = getPeriod() + WEEK;
+
+        if (!isReward[token]) {
+            isReward[token] = true;
+            rewards.push(token);
+        }
 
         uint balanceBefore = IERC20(token).balanceOf(address(this));
         _safeTransferFrom(token, msg.sender, address(this), amount);
