@@ -1452,7 +1452,7 @@
             "label": "_snek",
             "offset": 2,
             "slot": "0",
-            "type": "t_contract(ISnek)24057",
+            "type": "t_contract(ISnek)25684",
             "contract": "Minter",
             "src": "contracts/Minter.sol:24"
           },
@@ -1460,7 +1460,7 @@
             "label": "_voter",
             "offset": 0,
             "slot": "1",
-            "type": "t_contract(IVoter)24147",
+            "type": "t_contract(IVoter)25774",
             "contract": "Minter",
             "src": "contracts/Minter.sol:25"
           },
@@ -1468,7 +1468,7 @@
             "label": "_ve",
             "offset": 0,
             "slot": "2",
-            "type": "t_contract(IVotingEscrow)24293",
+            "type": "t_contract(IVotingEscrow)25920",
             "contract": "Minter",
             "src": "contracts/Minter.sol:26"
           },
@@ -1476,7 +1476,7 @@
             "label": "_rewards_distributor",
             "offset": 0,
             "slot": "3",
-            "type": "t_contract(IRewardsDistributor)23985",
+            "type": "t_contract(IRewardsDistributor)25612",
             "contract": "Minter",
             "src": "contracts/Minter.sol:27"
           },
@@ -1522,19 +1522,19 @@
             "label": "bool",
             "numberOfBytes": "1"
           },
-          "t_contract(IRewardsDistributor)23985": {
+          "t_contract(IRewardsDistributor)25612": {
             "label": "contract IRewardsDistributor",
             "numberOfBytes": "20"
           },
-          "t_contract(ISnek)24057": {
+          "t_contract(ISnek)25684": {
             "label": "contract ISnek",
             "numberOfBytes": "20"
           },
-          "t_contract(IVoter)24147": {
+          "t_contract(IVoter)25774": {
             "label": "contract IVoter",
             "numberOfBytes": "20"
           },
-          "t_contract(IVotingEscrow)24293": {
+          "t_contract(IVotingEscrow)25920": {
             "label": "contract IVotingEscrow",
             "numberOfBytes": "20"
           },

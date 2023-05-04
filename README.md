@@ -16,6 +16,7 @@
 | GaugeFactory          | [0xeeee50F6d5b7A80719fB2F9270E200da74667D77](https://snowtrace.io/address/0xeeee50F6d5b7A80719fB2F9270E200da74667D77#code) |
 | Voter                 | [0xeeee6FA8A6f8F32d76abAb2131f9e8aeb1b0B02B](https://snowtrace.io/address/0xeeee6FA8A6f8F32d76abAb2131f9e8aeb1b0B02B#code) |
 | RewardsDistributor    | [0xeeee78711E6F895D724D08CAE89144A0E1399a96](https://snowtrace.io/address/0xeeee78711E6F895D724D08CAE89144A0E1399a96#code) |
+| RewardsBriber         | [0xeeee7bA80607ac931BB1c68f14339013DF25d1b1](https://snowtrace.io/address/0xeeee7bA80607ac931BB1c68f14339013DF25d1b1#code) |
 | Minter                | [0xeeee869110d3dEABD559FBfc1D9387cb2adB540f](https://snowtrace.io/address/0xeeee869110d3dEABD559FBfc1D9387cb2adB540f#code) |
 
 ### Utilities
@@ -52,7 +53,8 @@
 | Gauge                 | [0x77C9483B7CAA0De8D0703ED5254221f168057Cb7](https://snowtrace.io/address/0x77C9483B7CAA0De8D0703ED5254221f168057Cb7#code) |
 | Voter                 | [0x5138fccd7bc5df1da3d4e47d6bbbf3873ddb4eb3](https://snowtrace.io/address/0x5138fccd7bc5df1da3d4e47d6bbbf3873ddb4eb3#code) |
 | RewardsDistributor    | [0x2A8fcA4f2cE3d259C5522bfaeEB78bB772364E77](https://snowtrace.io/address/0x2A8fcA4f2cE3d259C5522bfaeEB78bB772364E77#code) |
-| Minter                | [0x454D28D86BBB471262DC88EA776B0FfD9CF9fBdC](https://snowtrace.io/address/0x454D28D86BBB471262DC88EA776B0FfD9CF9fBdC#code) |
+| RewardsBriber         | [0xc9A91ad49BaE701b77A7fd34F3d5DA20D4518Aa6](https://snowtrace.io/address/0xc9A91ad49BaE701b77A7fd34F3d5DA20D4518Aa6#code) |
+| Minter                | [0x55b33736fB5C659688faEEFF58ecd71383e48D5C](https://snowtrace.io/address/0x55b33736fB5C659688faEEFF58ecd71383e48D5C#code) |
 
 ### Tokens
 
@@ -78,6 +80,7 @@
 | GaugeFactory          | [0xeeee55A381ca608B45a550A0c261B9ADa9C645f5](https://testnet.snowtrace.io/address/0xeeee55A381ca608B45a550A0c261B9ADa9C645f5#code) |
 | Voter                 | [0xeeee674b981F7A0266c099bdD8150B137996cC31](https://testnet.snowtrace.io/address/0xeeee674b981F7A0266c099bdD8150B137996cC31#code) |
 | RewardsDistributor    | [0xeeee794A5dd290Eb5CC92598A08EB61fE6D5f261](https://testnet.snowtrace.io/address/0xeeee794A5dd290Eb5CC92598A08EB61fE6D5f261#code) |
+| RewardsBriber         | [0xeeee70dA84C698A7073aC3b516F9C3f7Ec5eE2B4](https://testnet.snowtrace.io/address/0xeeee70dA84C698A7073aC3b516F9C3f7Ec5eE2B4#code) |
 | Minter                | [0xeeee84244DD0A1dE06493A0252dC02A238C04988](https://testnet.snowtrace.io/address/0xeeee84244DD0A1dE06493A0252dC02A238C04988#code) |
 
 ### Utilities
@@ -113,7 +116,8 @@
 | Gauge                 | [0xF2A969A94C72502fCf30b10D63Efcb9cFbce4dee](https://testnet.snowtrace.io/address/0xF2A969A94C72502fCf30b10D63Efcb9cFbce4dee#code) |
 | Voter                 | [0x4184C04A7f7c8cB002Fe3F067ad570dBfbF64d75](https://testnet.snowtrace.io/address/0x4184C04A7f7c8cB002Fe3F067ad570dBfbF64d75#code) |
 | RewardsDistributor    | [0x64088aA4B2876473809fC0fEe2372b554226fe09](https://testnet.snowtrace.io/address/0x64088aA4B2876473809fC0fEe2372b554226fe09#code) |
-| Minter                | [0xAeD4184C0e14DD77af0c980bB8DDcA8f0715A581](https://testnet.snowtrace.io/address/0xAeD4184C0e14DD77af0c980bB8DDcA8f0715A581#code) |
+| RewardsBriber         | [0xbC9b6CC23aD4C5967Fd214163F0393ac21343B38](https://testnet.snowtrace.io/address/0xbC9b6CC23aD4C5967Fd214163F0393ac21343B38#code) |
+| Minter                | [0x2f0Fa47a3AB38e46da1879317Cc8CeE55f0465A4](https://testnet.snowtrace.io/address/0x2f0Fa47a3AB38e46da1879317Cc8CeE55f0465A4#code) |
 
 ### Test Tokens
 

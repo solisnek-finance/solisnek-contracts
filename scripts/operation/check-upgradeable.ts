@@ -1,8 +1,8 @@
 import { ethers, upgrades } from "hardhat";
 import { log } from "../utils/log";
 
-const name = "PairFactory";
-const proxy = "0xeeee175CC85Db8D1245094B0f83e39b0128a8D6B";
+const name = "Minter";
+const proxy = "0xeeee84244DD0A1dE06493A0252dC02A238C04988";
 
 async function main() {
   const Contract = await ethers.getContractFactory(name);
