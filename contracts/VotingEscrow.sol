@@ -23,7 +23,8 @@ contract VotingEscrow is IERC721, IERC721Metadata, IVotes, Initializable {
         CREATE_LOCK_TYPE,
         INCREASE_LOCK_AMOUNT,
         INCREASE_UNLOCK_TIME,
-        MERGE_TYPE
+        MERGE_TYPE,
+        SPLIT_TYPE
     }
 
     struct LockedBalance {
@@ -730,7 +731,7 @@ contract VotingEscrow is IERC721, IERC721Metadata, IVotes, Initializable {
         _checkpoint(_tokenId, old_locked, _locked);
 
         address from = msg.sender;
-        if (_value != 0 && deposit_type != DepositType.MERGE_TYPE) {
+        if (_value != 0 && deposit_type != DepositType.MERGE_TYPE && deposit_type != DepositType.SPLIT_TYPE) {
             assert(IERC20(token).transferFrom(from, address(this), _value));
         }
 
@@ -1079,6 +1080,53 @@ contract VotingEscrow is IERC721, IERC721Metadata, IVotes, Initializable {
         _checkpoint(_from, _locked0, LockedBalance(0, 0));
         _burn(_from);
         _deposit_for(_to, value0, end, _locked1, DepositType.MERGE_TYPE);
+    }
+
+    /**
+     * @notice split NFT into multiple
+     * @param amounts   % of split
+     * @param _tokenId  NFTs ID
+     */
+    function split(uint[] memory amounts, uint _tokenId) external {
+        // check permission and vote
+        require(attachments[_tokenId] == 0 && !voted[_tokenId], "attached");
+        require(_isApprovedOrOwner(msg.sender, _tokenId));
+
+        // save old data and totalWeight
+        address _to = idToOwner[_tokenId];
+        LockedBalance memory _locked = locked[_tokenId];
+        uint end = _locked.end;
+        uint value = uint(int256(_locked.amount));
+        require(value > 0); // dev: need non-zero value
+
+        // reset supply, _deposit_for increase it
+        supply = supply - value;
+
+        uint i;
+        uint totalWeight = 0;
+        for (i = 0; i < amounts.length; i++) {
+            totalWeight += amounts[i];
+        }
+
+        // remove old data
+        locked[_tokenId] = LockedBalance(0, 0);
+        _checkpoint(_tokenId, _locked, LockedBalance(0, 0));
+        _burn(_tokenId);
+
+        // save end
+        uint unlock_time = end;
+        require(unlock_time > block.timestamp, "Can only lock until time in the future");
+        require(unlock_time <= block.timestamp + MAXTIME, "Voting lock can be 1 year max");
+
+        // mint
+        uint _value = 0;
+        for (i = 0; i < amounts.length; i++) {
+            ++tokenId;
+            _tokenId = tokenId;
+            _mint(_to, _tokenId);
+            _value = (value * amounts[i]) / totalWeight;
+            _deposit_for(_tokenId, _value, unlock_time, locked[_tokenId], DepositType.SPLIT_TYPE);
+        }
     }
 
     /*///////////////////////////////////////////////////////////////

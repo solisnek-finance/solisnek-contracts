@@ -531,7 +531,7 @@
             "label": "point_history",
             "offset": 0,
             "slot": "4",
-            "type": "t_mapping(t_uint256,t_struct(Point)18643_storage)",
+            "type": "t_mapping(t_uint256,t_struct(Point)20243_storage)",
             "contract": "VotingEscrow",
             "src": "contracts/VotingEscrow.sol:74"
           },
@@ -627,7 +627,7 @@
             "label": "user_point_history",
             "offset": 0,
             "slot": "16",
-            "type": "t_mapping(t_uint256,t_array(t_struct(Point)18643_storage)1000000000_storage)",
+            "type": "t_mapping(t_uint256,t_array(t_struct(Point)20243_storage)1000000000_storage)",
             "contract": "VotingEscrow",
             "src": "contracts/VotingEscrow.sol:121"
           },
@@ -635,7 +635,7 @@
             "label": "locked",
             "offset": 0,
             "slot": "17",
-            "type": "t_mapping(t_uint256,t_struct(LockedBalance)18634_storage)",
+            "type": "t_mapping(t_uint256,t_struct(LockedBalance)20234_storage)",
             "contract": "VotingEscrow",
             "src": "contracts/VotingEscrow.sol:122"
           },
@@ -691,7 +691,7 @@
             "label": "checkpoints",
             "offset": 0,
             "slot": "24",
-            "type": "t_mapping(t_address,t_mapping(t_uint32,t_struct(Checkpoint)18649_storage))",
+            "type": "t_mapping(t_address,t_mapping(t_uint32,t_struct(Checkpoint)20249_storage))",
             "contract": "VotingEscrow",
             "src": "contracts/VotingEscrow.sol:148"
           },
@@ -717,7 +717,7 @@
             "label": "address",
             "numberOfBytes": "20"
           },
-          "t_array(t_struct(Point)18643_storage)1000000000_storage": {
+          "t_array(t_struct(Point)20243_storage)1000000000_storage": {
             "label": "struct VotingEscrow.Point[1000000000]",
             "numberOfBytes": "96000000000"
           },
@@ -753,7 +753,7 @@
             "label": "mapping(address => mapping(uint256 => uint256))",
             "numberOfBytes": "32"
           },
-          "t_mapping(t_address,t_mapping(t_uint32,t_struct(Checkpoint)18649_storage))": {
+          "t_mapping(t_address,t_mapping(t_uint32,t_struct(Checkpoint)20249_storage))": {
             "label": "mapping(address => mapping(uint32 => struct VotingEscrow.Checkpoint))",
             "numberOfBytes": "32"
           },
@@ -773,7 +773,7 @@
             "label": "mapping(uint256 => address)",
             "numberOfBytes": "32"
           },
-          "t_mapping(t_uint256,t_array(t_struct(Point)18643_storage)1000000000_storage)": {
+          "t_mapping(t_uint256,t_array(t_struct(Point)20243_storage)1000000000_storage)": {
             "label": "mapping(uint256 => struct VotingEscrow.Point[1000000000])",
             "numberOfBytes": "32"
           },
@@ -785,11 +785,11 @@
             "label": "mapping(uint256 => int128)",
             "numberOfBytes": "32"
           },
-          "t_mapping(t_uint256,t_struct(LockedBalance)18634_storage)": {
+          "t_mapping(t_uint256,t_struct(LockedBalance)20234_storage)": {
             "label": "mapping(uint256 => struct VotingEscrow.LockedBalance)",
             "numberOfBytes": "32"
           },
-          "t_mapping(t_uint256,t_struct(Point)18643_storage)": {
+          "t_mapping(t_uint256,t_struct(Point)20243_storage)": {
             "label": "mapping(uint256 => struct VotingEscrow.Point)",
             "numberOfBytes": "32"
           },
@@ -797,11 +797,11 @@
             "label": "mapping(uint256 => uint256)",
             "numberOfBytes": "32"
           },
-          "t_mapping(t_uint32,t_struct(Checkpoint)18649_storage)": {
+          "t_mapping(t_uint32,t_struct(Checkpoint)20249_storage)": {
             "label": "mapping(uint32 => struct VotingEscrow.Checkpoint)",
             "numberOfBytes": "32"
           },
-          "t_struct(Checkpoint)18649_storage": {
+          "t_struct(Checkpoint)20249_storage": {
             "label": "struct VotingEscrow.Checkpoint",
             "members": [
               {
@@ -819,7 +819,7 @@
             ],
             "numberOfBytes": "64"
           },
-          "t_struct(LockedBalance)18634_storage": {
+          "t_struct(LockedBalance)20234_storage": {
             "label": "struct VotingEscrow.LockedBalance",
             "members": [
               {
@@ -837,7 +837,7 @@
             ],
             "numberOfBytes": "64"
           },
-          "t_struct(Point)18643_storage": {
+          "t_struct(Point)20243_storage": {
             "label": "struct VotingEscrow.Point",
             "members": [
               {
